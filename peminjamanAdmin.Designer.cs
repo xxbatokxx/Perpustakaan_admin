@@ -147,7 +147,7 @@
             this.btn_kembali.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
             this.btn_kembali.Size = new System.Drawing.Size(167, 32);
             this.btn_kembali.TabIndex = 57;
-            this.btn_kembali.Text = "PENGEMBALIAN BUKU";
+            this.btn_kembali.Text = "PEMINJAMAN BUKU";
             this.btn_kembali.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_kembali.UseVisualStyleBackColor = false;
             // 
@@ -240,7 +240,7 @@
             this.label2.TabIndex = 64;
             this.label2.Text = "Menampilkan                  Data Buku.";
             // 
-            // peminjaman
+            // peminjamanAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -258,7 +258,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Name = "peminjaman";
+            this.Name = "peminjamanAdmin";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data_pinjam)).EndInit();
             this.ResumeLayout(false);
