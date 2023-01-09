@@ -184,6 +184,12 @@
     <Compile Include="loginAccount.Designer.cs">
       <DependentUpon>loginAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="peminjamanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="peminjamanForm.Designer.cs">
+      <DependentUpon>peminjamanForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ubahAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userForm.Designer.cs">
+      <DependentUpon>userForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="daftarAccount.resx">
       <DependentUpon>daftarAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="loginAccount.resx">
       <DependentUpon>loginAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="peminjamanForm.resx">
+      <DependentUpon>peminjamanForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ubahAccount.resx">
       <DependentUpon>ubahAccount.cs</DependentUpon>
@@ -252,6 +273,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userForm.resx">
+      <DependentUpon>userForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
