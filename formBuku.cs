@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using Perpustakaan;
+using Perpustakaan_admin.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,49 +21,65 @@ namespace Perpustakaan_admin
     public partial class formBuku : Form
     {
 
-        Database db = new Database();
+        Buku buku = new Buku();
 
         public formBuku()
         {
             InitializeComponent();
         }
 
-      
+
         private void btn_tambah_Click(object sender, EventArgs e)
         {
-            Database db = new Database();
-            string connectionString = "server=localhost;port=3306;username=root;password=;database=perpustakaan";
-            MySqlConnection conn = new MySqlConnection(connectionString);
+            string id_buku = txt_id.Text;
+            string judul = txt_judul.Text;
+            string pengarang = txt_pengarang.Text;
+            string penerbit = txt_penerbit.Text;
+            string status = cmb_status.Text;
 
-            try
+            if (id_buku.Trim().Equals(""))
             {
-                conn.Open();
-                Console.WriteLine("Connected to MySql database!");
-                string queryString = "INSERT INTO buku VALUES (@id_buku, @judul, @pengarang, @penerbit, @status)";
+                MessageBox.Show("masukan id terlebih dahulu terlebih dahulu", "penerbit kosong",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+            }
+            else if (judul.Trim().Equals(""))
+            {
+                   MessageBox.Show("isi judul buku terlebih dahulu", "judul buku kosong",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+            }
+            else if(pengarang.Trim().Equals(""))
+            {
+                  MessageBox.Show("Isi pengarang terlebih dahulu","pengarang kosong",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Error);
+            }
+            else if (penerbit.Trim().Equals(""))
+            {
+                MessageBox.Show("Isi penerbit terlebih dahulu", "penerbit kosong",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+            }
+            else
+            {
+               if (buku.addBuku(id_buku, judul, pengarang, penerbit, status) == 1)
+                {
+                    MessageBox.Show("New Genre Added Successfully!",
+                    "New Genre",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+               else
+                {
+                    MessageBox.Show("data tidak terisi", "data kosong",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Error);
+                }
+               this.Hide();
                 
-                MySqlCommand command = new MySqlCommand(queryString, conn);
-
-                command.Parameters.AddWithValue("@id_Buku", txt_id.Text);
-                command.Parameters.AddWithValue("@judul", txt_judul.Text);
-                command.Parameters.AddWithValue("@pengarang", txt_pengarang.Text);
-                command.Parameters.AddWithValue("@penerbit", txt_penerbit.Text);
-                command.Parameters.AddWithValue("@status", cmb_kategori.Text);
-                command.ExecuteNonQuery();
-                MessageBox.Show("Sukses simpan data");
-
             }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-
-             
-                this.Hide();
-                conn.Close();
-
-            }
+           
         }
     }
 }

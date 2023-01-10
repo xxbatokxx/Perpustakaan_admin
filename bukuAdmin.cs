@@ -35,7 +35,7 @@ namespace Perpustakaan_admin
 
         private void dgv_data_buku_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void bukuAdmin_Load(object sender, EventArgs e)

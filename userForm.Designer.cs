@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_update = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_tambah = new System.Windows.Forms.Button();
             this.txt_kelas = new System.Windows.Forms.TextBox();
@@ -39,8 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_header = new System.Windows.Forms.Label();
-            this.txt_nim = new System.Windows.Forms.TextBox();
             this.txt_idUser = new System.Windows.Forms.TextBox();
+            this.txt_nim = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Controls.Add(this.btn_update);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btn_reset);
             this.panel2.Controls.Add(this.btn_tambah);
             this.panel2.Location = new System.Drawing.Point(3, 287);
@@ -56,25 +56,16 @@
             this.panel2.Size = new System.Drawing.Size(415, 67);
             this.panel2.TabIndex = 43;
             // 
-            // btn_update
+            // button1
             // 
-            this.btn_update.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_update.FlatAppearance.BorderSize = 0;
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_update.Location = new System.Drawing.Point(126, 20);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_update.Size = new System.Drawing.Size(87, 32);
-            this.btn_update.TabIndex = 11;
-            this.btn_update.Text = "UPDATE";
-            this.btn_update.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_update.UseVisualStyleBackColor = false;
-            this.btn_update.Visible = false;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Location = new System.Drawing.Point(122, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 32);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "EDIT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // btn_reset
             // 
@@ -147,7 +138,7 @@
             // txt_nama
             // 
             this.txt_nama.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nama.Location = new System.Drawing.Point(110, 154);
+            this.txt_nama.Location = new System.Drawing.Point(111, 157);
             this.txt_nama.Name = "txt_nama";
             this.txt_nama.Size = new System.Drawing.Size(307, 25);
             this.txt_nama.TabIndex = 36;
@@ -183,19 +174,19 @@
             this.label_header.TabIndex = 0;
             this.label_header.Text = "Form Member";
             // 
-            // txt_nim
-            // 
-            this.txt_nim.Location = new System.Drawing.Point(110, 196);
-            this.txt_nim.Name = "txt_nim";
-            this.txt_nim.Size = new System.Drawing.Size(307, 20);
-            this.txt_nim.TabIndex = 44;
-            // 
             // txt_idUser
             // 
             this.txt_idUser.Location = new System.Drawing.Point(18, 24);
             this.txt_idUser.Name = "txt_idUser";
             this.txt_idUser.Size = new System.Drawing.Size(100, 20);
             this.txt_idUser.TabIndex = 45;
+            // 
+            // txt_nim
+            // 
+            this.txt_nim.Location = new System.Drawing.Point(110, 196);
+            this.txt_nim.Name = "txt_nim";
+            this.txt_nim.Size = new System.Drawing.Size(307, 20);
+            this.txt_nim.TabIndex = 44;
             // 
             // userForm
             // 
@@ -223,7 +214,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_reset;
         public System.Windows.Forms.Button btn_tambah;
         public System.Windows.Forms.TextBox txt_kelas;
@@ -235,5 +225,6 @@
         public System.Windows.Forms.Label label_header;
         private System.Windows.Forms.TextBox txt_nim;
         private System.Windows.Forms.TextBox txt_idUser;
+        private System.Windows.Forms.Button button1;
     }
 }

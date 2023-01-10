@@ -31,7 +31,7 @@ namespace Perpustakaan_admin
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmb_kategori = new System.Windows.Forms.ComboBox();
+            this.cmb_status = new System.Windows.Forms.ComboBox();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -51,22 +51,22 @@ namespace Perpustakaan_admin
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmb_kategori
+            // cmb_status
             // 
-            this.cmb_kategori.DropDownHeight = 200;
-            this.cmb_kategori.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_kategori.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.cmb_kategori.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.cmb_kategori.IntegralHeight = false;
-            this.cmb_kategori.ItemHeight = 16;
-            this.cmb_kategori.Items.AddRange(new object[] {
+            this.cmb_status.DropDownHeight = 200;
+            this.cmb_status.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_status.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.cmb_status.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.cmb_status.IntegralHeight = false;
+            this.cmb_status.ItemHeight = 16;
+            this.cmb_status.Items.AddRange(new object[] {
             "Tersedia",
             "Kosong"});
-            this.cmb_kategori.Location = new System.Drawing.Point(90, 275);
-            this.cmb_kategori.Name = "cmb_kategori";
-            this.cmb_kategori.Size = new System.Drawing.Size(170, 24);
-            this.cmb_kategori.TabIndex = 32;
-            this.cmb_kategori.Text = "Tersedia";
+            this.cmb_status.Location = new System.Drawing.Point(90, 275);
+            this.cmb_status.Name = "cmb_status";
+            this.cmb_status.Size = new System.Drawing.Size(170, 24);
+            this.cmb_status.TabIndex = 32;
+            this.cmb_status.Text = "Tersedia";
             // 
             // btn_update
             // 
@@ -245,7 +245,7 @@ namespace Perpustakaan_admin
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 507);
-            this.Controls.Add(this.cmb_kategori);
+            this.Controls.Add(this.cmb_status);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_penerbit);
@@ -274,7 +274,7 @@ namespace Perpustakaan_admin
 
         #endregion
 
-        public System.Windows.Forms.ComboBox cmb_kategori;
+        public System.Windows.Forms.ComboBox cmb_status;
         public System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Panel panel2;

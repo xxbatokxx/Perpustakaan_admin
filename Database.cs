@@ -1,5 +1,7 @@
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 using System;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 
@@ -42,10 +44,28 @@ namespace Perpustakaan
             return connection;
         }
 
+        public DataTable GetData(string query, MySqlParameter[] parameters)
+        {
+            MySqlCommand command = new MySqlCommand(query, GetConnection());
+
+            if (parameters != null)
+            {
+                command.Parameters.AddRange(parameters);
+            }
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(dt);
+            return dt;
+        }
         internal static void execute(string v)
         {
             throw new NotImplementedException();
         }
+
+        
 
 
 
