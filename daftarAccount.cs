@@ -11,7 +11,7 @@ namespace Perpustakaan_admin
     {
         admin adm = new admin();
 
-        public daftarAccount()
+        public daftarAccount(dashboardAdmin dashboardAdmin)
         {
             InitializeComponent();
         }
