@@ -50,7 +50,7 @@
             this.label_header.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_header.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_header.Location = new System.Drawing.Point(12, 19);
+            this.label_header.Location = new System.Drawing.Point(14, 19);
             this.label_header.Name = "label_header";
             this.label_header.Size = new System.Drawing.Size(193, 25);
             this.label_header.TabIndex = 0;

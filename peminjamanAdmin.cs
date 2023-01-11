@@ -16,5 +16,10 @@ namespace Perpustakaan_admin
         {
             InitializeComponent();
         }
+
+        private void dgv_data_pinjam_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

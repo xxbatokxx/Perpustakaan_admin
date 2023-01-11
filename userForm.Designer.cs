@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_tambah = new System.Windows.Forms.Button();
             this.txt_kelas = new System.Windows.Forms.TextBox();
@@ -39,8 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_header = new System.Windows.Forms.Label();
-            this.txt_idUser = new System.Windows.Forms.TextBox();
             this.txt_nim = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_edit);
             this.panel2.Controls.Add(this.btn_reset);
             this.panel2.Controls.Add(this.btn_tambah);
             this.panel2.Location = new System.Drawing.Point(3, 287);
@@ -56,16 +57,16 @@
             this.panel2.Size = new System.Drawing.Size(415, 67);
             this.panel2.TabIndex = 43;
             // 
-            // button1
+            // btn_edit
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Location = new System.Drawing.Point(122, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 32);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "EDIT";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button_Click);
+            this.btn_edit.BackColor = System.Drawing.Color.Orange;
+            this.btn_edit.Location = new System.Drawing.Point(122, 20);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(92, 32);
+            this.btn_edit.TabIndex = 11;
+            this.btn_edit.Text = "UPDATE";
+            this.btn_edit.UseVisualStyleBackColor = false;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_reset
             // 
@@ -82,9 +83,10 @@
             this.btn_reset.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
             this.btn_reset.Size = new System.Drawing.Size(80, 32);
             this.btn_reset.TabIndex = 10;
-            this.btn_reset.Text = "RESET";
+            this.btn_reset.Text = "DELETE";
             this.btn_reset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_tambah
             // 
@@ -157,7 +159,6 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Controls.Add(this.label_header);
-            this.panel1.Controls.Add(this.txt_idUser);
             this.panel1.Location = new System.Drawing.Point(3, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(413, 63);
@@ -168,18 +169,11 @@
             this.label_header.AutoSize = true;
             this.label_header.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_header.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_header.Location = new System.Drawing.Point(12, 19);
+            this.label_header.Location = new System.Drawing.Point(13, 23);
             this.label_header.Name = "label_header";
             this.label_header.Size = new System.Drawing.Size(129, 25);
             this.label_header.TabIndex = 0;
             this.label_header.Text = "Form Member";
-            // 
-            // txt_idUser
-            // 
-            this.txt_idUser.Location = new System.Drawing.Point(18, 24);
-            this.txt_idUser.Name = "txt_idUser";
-            this.txt_idUser.Size = new System.Drawing.Size(100, 20);
-            this.txt_idUser.TabIndex = 45;
             // 
             // txt_nim
             // 
@@ -188,11 +182,32 @@
             this.txt_nim.Size = new System.Drawing.Size(307, 20);
             this.txt_nim.TabIndex = 44;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "ID USER";
+            // 
+            // txt_id
+            // 
+            this.txt_id.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txt_id.Location = new System.Drawing.Point(109, 117);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(307, 25);
+            this.txt_id.TabIndex = 46;
+            // 
             // userForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 390);
+            this.Controls.Add(this.txt_id);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_nim);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txt_kelas);
@@ -224,7 +239,8 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Label label_header;
         private System.Windows.Forms.TextBox txt_nim;
-        private System.Windows.Forms.TextBox txt_idUser;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txt_id;
     }
 }

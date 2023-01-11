@@ -37,9 +37,9 @@ namespace Perpustakaan_admin
             this.btn_daftar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_header = new System.Windows.Forms.Label();
+            this.txt_idAdm = new System.Windows.Forms.TextBox();
             this.txt_nama = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_idAdm = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -135,6 +135,14 @@ namespace Perpustakaan_admin
             this.label_header.TabIndex = 0;
             this.label_header.Text = "Masukan akun anda";
             // 
+            // txt_idAdm
+            // 
+            this.txt_idAdm.Location = new System.Drawing.Point(45, 19);
+            this.txt_idAdm.Multiline = true;
+            this.txt_idAdm.Name = "txt_idAdm";
+            this.txt_idAdm.Size = new System.Drawing.Size(138, 20);
+            this.txt_idAdm.TabIndex = 71;
+            // 
             // txt_nama
             // 
             this.txt_nama.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -152,14 +160,6 @@ namespace Perpustakaan_admin
             this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 66;
             this.label3.Text = "Username";
-            // 
-            // txt_idAdm
-            // 
-            this.txt_idAdm.Location = new System.Drawing.Point(45, 19);
-            this.txt_idAdm.Multiline = true;
-            this.txt_idAdm.Name = "txt_idAdm";
-            this.txt_idAdm.Size = new System.Drawing.Size(138, 20);
-            this.txt_idAdm.TabIndex = 71;
             // 
             // loginAccount
             // 

@@ -42,5 +42,47 @@ namespace Perpustakaan_admin.model
             
         }
 
+        public int updateBuku(string id_buku, string judul, string pengarang, string penerbit, string status)
+        {
+            string queryString = "UPDATE buku SET judul=@judul, pengarang=@pengarang, penerbit=@penerbit, status=@status WHERE id_buku=@id_buku";
+            
+            MySqlParameter[] parameters = new MySqlParameter[5];
+
+            parameters[0] = new MySqlParameter("@id_buku", MySqlDbType.VarChar);
+            parameters[1] = new MySqlParameter("@judul", MySqlDbType.VarChar);
+            parameters[2] = new MySqlParameter("@pengarang", MySqlDbType.VarChar);
+            parameters[3] = new MySqlParameter("@penerbit", MySqlDbType.VarChar);
+            parameters[4] = new MySqlParameter("@status", MySqlDbType.VarChar);
+
+            parameters[0].Value = id_buku;
+            parameters[1].Value = judul;
+            parameters[2].Value = pengarang;
+            parameters[3].Value = penerbit;
+            parameters[4].Value = status;
+
+            return db.setData(queryString, parameters);
+
+        }
+
+        public DataTable viewBuku()
+        {
+            DataTable dt = new DataTable();
+            dt = db.getData("SELECT * FROM buku", null);
+
+            return dt;
+        }
+
+        internal int RemoveBuku(string id_buku)
+        {
+            string queryString = "DELETE FROM buku WHERE id_buku=@id_buku";
+
+            MySqlParameter[] parameters = new MySqlParameter[1];
+
+            parameters[0] = new MySqlParameter("@id_buku", MySqlDbType.VarChar);
+            parameters[0].Value = id_buku;
+
+            return db.setData(queryString, parameters);
+
+        }
     }
 }

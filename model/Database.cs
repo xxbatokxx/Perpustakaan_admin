@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Data;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Perpustakaan_admin.model
@@ -47,6 +48,23 @@ namespace Perpustakaan_admin.model
             closeConnction();
 
             return commandState;
+        }
+
+        public DataTable getData(string query, MySqlParameter[] parameters)
+        {
+            MySqlCommand command = new MySqlCommand(query, getConnection());
+
+            if (parameters != null)
+            {
+                command.Parameters.AddRange(parameters);
+            }
+
+            DataTable dt = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(dt);
+            return dt;
         }
     }
 }

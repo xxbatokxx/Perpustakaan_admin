@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Data.Entity;
 using Perpustakaan_admin;
@@ -9,11 +9,16 @@ namespace Perpustakaan_admin
 {
     public partial class daftarAccount : Form
     {
+
         admin adm = new admin();
 
         public daftarAccount(dashboardAdmin dashboardAdmin)
         {
             InitializeComponent();
+        }
+
+        public daftarAccount()
+        {
         }
 
         private void daftarAccount_Load(object sender, EventArgs e)

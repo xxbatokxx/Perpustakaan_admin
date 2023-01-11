@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Perpustakaan_admin.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,12 @@ namespace Perpustakaan_admin
 {
     public partial class bukuAdmin : Form
     {
-        
 
+        Buku buku = new Buku();
         public bukuAdmin()
         {
             InitializeComponent();
+
         }
 
         
@@ -35,14 +37,16 @@ namespace Perpustakaan_admin
 
         private void dgv_data_buku_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+             
         }
 
         private void bukuAdmin_Load(object sender, EventArgs e)
         {
-           
-        }
+            dgv_data_buku.DataSource = buku.viewBuku();
+            dgv_data_buku.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv_data_buku.EnableHeadersVisualStyles = false;
 
+        }
 
     }
 }

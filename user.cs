@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Perpustakaan_admin.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace Perpustakaan_admin
         {
             InitializeComponent();
         }
+        
+        Users userss = new Users();
 
         private void label_info_Click(object sender, EventArgs e)
         {
@@ -27,5 +30,28 @@ namespace Perpustakaan_admin
             new userForm().Show();
             this.Hide();
         }
+
+        private void dgv_data_member_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void user_Load(object sender, EventArgs e)
+        {
+            dgv_data_member.DataSource = userss.viewUser();
+            dgv_data_member.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dgv_data_member.EnableHeadersVisualStyles = false;
+        }
+
+        
+
+        private void btn_hapus_Click(object sender, EventArgs e)
+        {
+            new userForm().Show();
+            this.Hide();
+        }
+
+
     }
 }

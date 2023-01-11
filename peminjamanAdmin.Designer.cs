@@ -200,6 +200,7 @@
             this.dgv_data_pinjam.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_data_pinjam.Size = new System.Drawing.Size(789, 335);
             this.dgv_data_pinjam.TabIndex = 54;
+            this.dgv_data_pinjam.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_data_pinjam_CellContentClick);
             // 
             // label_info
             // 

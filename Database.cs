@@ -3,6 +3,7 @@ using MySqlX.XDevAPI.Relational;
 using System;
 using System.Data;
 using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 
 namespace Perpustakaan
@@ -47,6 +48,8 @@ namespace Perpustakaan
         public DataTable GetData(string query, MySqlParameter[] parameters)
         {
             MySqlCommand command = new MySqlCommand(query, GetConnection());
+            
+            
 
             if (parameters != null)
             {
@@ -55,6 +58,7 @@ namespace Perpustakaan
 
             DataTable dt = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
+            
 
             adapter.SelectCommand = command;
             adapter.Fill(dt);
