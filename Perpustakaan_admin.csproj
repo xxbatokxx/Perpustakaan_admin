@@ -249,6 +249,7 @@
     </Compile>
     <Compile Include="model\Buku.cs" />
     <Compile Include="model\Database.cs" />
+    <Compile Include="model\Users.cs" />
     <Compile Include="peminjamanForm.cs">
       <SubType>Form</SubType>
     </Compile>

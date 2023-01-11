@@ -6,9 +6,13 @@ namespace Perpustakaan_admin
 {
     public partial class daftarAccount : Form
     {
-        public daftarAccount()
+        public daftarAccount(dashboardAdmin dashboardAdmin)
         {
             InitializeComponent();
+        }
+
+        public daftarAccount()
+        {
         }
 
         private void daftarAccount_Load(object sender, EventArgs e)

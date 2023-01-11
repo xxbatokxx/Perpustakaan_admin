@@ -40,8 +40,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label_info = new System.Windows.Forms.Label();
-            this.btn_hapus = new System.Windows.Forms.Button();
-            this.btn_edit = new System.Windows.Forms.Button();
             this.txt_cari = new System.Windows.Forms.TextBox();
             this.btn_tambah = new System.Windows.Forms.Button();
             this.dgv_data_buku = new System.Windows.Forms.DataGridView();
@@ -163,44 +161,6 @@
             this.label_info.TabIndex = 35;
             this.label_info.Text = "Menampilkan                  Data Buku.";
             // 
-            // btn_hapus
-            // 
-            this.btn_hapus.BackColor = System.Drawing.Color.OrangeRed;
-            this.btn_hapus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_hapus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_hapus.FlatAppearance.BorderSize = 0;
-            this.btn_hapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_hapus.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hapus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_hapus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_hapus.Location = new System.Drawing.Point(219, 89);
-            this.btn_hapus.Name = "btn_hapus";
-            this.btn_hapus.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_hapus.Size = new System.Drawing.Size(84, 32);
-            this.btn_hapus.TabIndex = 34;
-            this.btn_hapus.Text = "HAPUS";
-            this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_hapus.UseVisualStyleBackColor = false;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BackColor = System.Drawing.Color.Gray;
-            this.btn_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_edit.FlatAppearance.BorderSize = 0;
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_edit.Location = new System.Drawing.Point(115, 89);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_edit.Size = new System.Drawing.Size(94, 32);
-            this.btn_edit.TabIndex = 33;
-            this.btn_edit.Text = "EDIT";
-            this.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_edit.UseVisualStyleBackColor = false;
-            // 
             // txt_cari
             // 
             this.txt_cari.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,7 +180,7 @@
             this.btn_tambah.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_tambah.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_tambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_tambah.Location = new System.Drawing.Point(18, 89);
+            this.btn_tambah.Location = new System.Drawing.Point(18, 90);
             this.btn_tambah.Name = "btn_tambah";
             this.btn_tambah.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
             this.btn_tambah.Size = new System.Drawing.Size(87, 32);
@@ -286,8 +246,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_info);
-            this.Controls.Add(this.btn_hapus);
-            this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.txt_cari);
             this.Controls.Add(this.btn_tambah);
             this.Controls.Add(this.dgv_data_buku);
@@ -311,8 +269,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_info;
-        private System.Windows.Forms.Button btn_hapus;
-        private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.TextBox txt_cari;
         private System.Windows.Forms.Button btn_tambah;
         private System.Windows.Forms.DataGridView dgv_data_buku;

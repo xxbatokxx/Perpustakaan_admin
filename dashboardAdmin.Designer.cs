@@ -44,6 +44,7 @@ namespace Perpustakaan_admin
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -206,6 +207,7 @@ namespace Perpustakaan_admin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lbl_id);
@@ -216,6 +218,16 @@ namespace Perpustakaan_admin
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(254, 620);
             this.panel1.TabIndex = 15;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(16, 135);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Liat profile";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel5
             // 
@@ -398,6 +410,7 @@ namespace Perpustakaan_admin
             this.Controls.Add(this.button6);
             this.Name = "dashboardAdmin";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.dashboardAdmin_Load);
             this.panel2.ResumeLayout(false);
             this.panel_content.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -454,6 +467,7 @@ namespace Perpustakaan_admin
         public System.Windows.Forms.ToolStripStatusLabel status_level;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private Button button2;
     }
 }
 

@@ -180,6 +180,7 @@
             this.btn_hapus.Text = "HAPUS";
             this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_hapus.UseVisualStyleBackColor = false;
+            this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
             // 
             // btn_edit
             // 
@@ -231,6 +232,7 @@
             // 
             // dgv_data_member
             // 
+            this.dgv_data_member.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_data_member.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -264,11 +266,13 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_data_member.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_data_member.RowHeadersVisible = false;
             this.dgv_data_member.RowHeadersWidth = 40;
             this.dgv_data_member.RowTemplate.Height = 28;
             this.dgv_data_member.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_data_member.Size = new System.Drawing.Size(790, 335);
             this.dgv_data_member.TabIndex = 45;
+            this.dgv_data_member.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_data_member_CellContentClick);
             // 
             // user
             // 
@@ -291,6 +295,7 @@
             this.Controls.Add(this.dgv_data_member);
             this.Name = "user";
             this.Text = "user";
+            this.Load += new System.EventHandler(this.user_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data_member)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

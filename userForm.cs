@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using Perpustakaan;
+using Perpustakaan_admin.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,100 +11,115 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Perpustakaan_admin
 {
     public partial class userForm : Form
     {
-       
+
+        
         public userForm()
         {
             InitializeComponent();
         }
 
-       
+        Users userss = new Users();
+
 
         private void btn_tambah_Click(object sender, EventArgs e)
         {
-            Database db = new Database();
-            string connectionString = "server=localhost;port=3306;username=root;password=;database=perpustakaan";
-            MySqlConnection conn = new MySqlConnection(connectionString);
+            int id_user = Convert.ToInt32(txt_id.Text);
+            string nama = txt_nama.Text;
+            int nim = Convert.ToInt32(txt_nim.Text);
+            string kelas = txt_kelas.Text;
 
-            try
+            if (nama.Trim().Equals(""))
             {
-                conn.Open();
-                Console.WriteLine("Connected to MySql database!");
-                string queryString = "INSERT INTO users VALUES (@id_user, @nama, @nim, @kelas)";
-
-                MySqlCommand command = new MySqlCommand(queryString, conn);
-
-                command.Parameters.AddWithValue("@id_user", txt_idUser.Text);
-                command.Parameters.AddWithValue("@nama", txt_nama.Text);
-                command.Parameters.AddWithValue("@nim", txt_nim.Text);
-                command.Parameters.AddWithValue("@kelas", txt_kelas.Text);
-                command.ExecuteNonQuery();
-                MessageBox.Show("Sukses simpan data");
-
+                MessageBox.Show("masukan nama terlebih dahulu", "nama kosong",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
             }
-            catch (MySqlException ex)
+            else if (kelas.Trim().Equals(""))
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Isi pengarang terlebih dahulu", "pengarang kosong",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
             }
-            //catch (namaException ex)
-            //{
-                //MessageBox.Show("Masukan nama terlebih dahulu");
-            //}
-            finally 
+            else
             {
+                if (userss.addUsers(id_user, nama, nim, kelas) == 1)
+                {
+                    MessageBox.Show("User baru sudah ditambah!",
+                    "New Genre",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("data tidak terisi", "data kosong",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                }
+                new user().Show();
                 this.Hide();
-                conn.Close();
+                    
 
             }
         }
 
-       
-
-        private void button_Click(object sender, EventArgs e)
+        private void btn_edit_Click(object sender, EventArgs e)
         {
+            int id_user = Convert.ToInt32(txt_id.Text);
+            string nama = txt_nama.Text;
+            int nim = Convert.ToInt32(txt_nim.Text);
+            string kelas = txt_kelas.Text;
 
-            Database db = new Database();
-            string connectionString = "server=localhost;port=3306;username=root;password=;database=perpustakaan";
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            conn.Open();
-
-
-            string queryString = "UPDATE users SET nama=@nama, nim=@nim, kelas=@kelas WHERE nim=@nim ";
-
-            MySqlCommand command = new MySqlCommand(queryString, conn);
-
-            command.Parameters.AddWithValue("@id_user", txt_idUser.Text);
-            command.Parameters.AddWithValue("@nama", txt_nama.Text);
-            command.Parameters.AddWithValue("@nim", txt_nim.Text);
-            command.Parameters.AddWithValue("@kelas", txt_kelas.Text);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Sukses edit data");
-            conn.Close();
+            if (userss.updateUsers(id_user, nama, nim, kelas) == 1)
+            {
+                MessageBox.Show("Buku sudah di update!",
+                "Buku baru",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("data tidak terisi", "data kosong",
+           MessageBoxButtons.OK,
+           MessageBoxIcon.Error);
+            }
+            new user().Show();
+            this.Hide();
             
         }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            int id_user = Convert.ToInt32(txt_id.Text);
+
+            if (userss.RemoveUser(id_user) == 1)
+            {
+                MessageBox.Show("Data buku sudah dihapus!",
+                    "hapus buku",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                txt_id.Text = "";
+                txt_nama.Text = "";
+                txt_nim.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Data buku tidak terhapus",
+                "Delete Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+            }
+
+            new user().Show();
+            this.Hide();
+        }
     }
+       
 
-    [Serializable]
-    internal class namaException : Exception
-    {
-        public namaException()
-        {
-        }
-
-        public namaException(string message) : base(message)
-        {
-        }
-
-        public namaException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
-
-        protected namaException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
-    }
 }
