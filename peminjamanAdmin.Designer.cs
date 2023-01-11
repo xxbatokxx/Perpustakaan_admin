@@ -150,6 +150,7 @@
             this.btn_kembali.Text = "PEMINJAMAN BUKU";
             this.btn_kembali.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_kembali.UseVisualStyleBackColor = false;
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
             // txt_cari
             // 

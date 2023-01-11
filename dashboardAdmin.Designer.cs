@@ -169,6 +169,7 @@ namespace Perpustakaan_admin
             this.btn_kembali.TabIndex = 11;
             this.btn_kembali.Text = "Pemgembalian";
             this.btn_kembali.UseVisualStyleBackColor = false;
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
             // btn_pinjam
             // 
@@ -183,6 +184,7 @@ namespace Perpustakaan_admin
             this.btn_pinjam.TabIndex = 10;
             this.btn_pinjam.Text = "Peminjaman";
             this.btn_pinjam.UseVisualStyleBackColor = false;
+            this.btn_pinjam.Click += new System.EventHandler(this.btn_pinjam_Click);
             // 
             // pictureBox2
             // 

@@ -21,5 +21,11 @@ namespace Perpustakaan_admin
         {
 
         }
+
+        private void btn_kembali_Click(object sender, EventArgs e)
+        {
+            new peminjamanForm().Show();
+            this.Hide();
+        }
     }
 }

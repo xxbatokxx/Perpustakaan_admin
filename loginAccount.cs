@@ -27,8 +27,7 @@ namespace Perpustakaan_admin
 
         private void btn_daftar_Click(object sender, EventArgs e)
         {
-            daftarAccount daftarAccount = new daftarAccount();
-            daftarAccount.Show();
+            new daftarAccount().Show();
             this.Hide();
         }
 

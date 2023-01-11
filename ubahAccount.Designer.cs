@@ -120,6 +120,7 @@
             this.btn_reset.Text = "RESET";
             this.btn_reset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // panel1
             // 

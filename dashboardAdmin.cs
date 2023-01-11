@@ -40,5 +40,17 @@ namespace Perpustakaan_admin
         {
 
         }
+
+        private void btn_kembali_Click(object sender, EventArgs e)
+        {
+            new pengembalianAdmin().Show();
+            this.Hide();
+        }
+
+        private void btn_pinjam_Click(object sender, EventArgs e)
+        {
+            new peminjamanAdmin().Show();
+            this.Hide();
+        }
     }
 }

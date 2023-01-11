@@ -50,5 +50,10 @@ namespace Perpustakaan_admin
         {
 
         }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

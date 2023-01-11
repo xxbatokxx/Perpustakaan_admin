@@ -16,5 +16,11 @@ namespace Perpustakaan_admin
         {
             InitializeComponent();
         }
+
+        private void btn_kembali_Click(object sender, EventArgs e)
+        {
+            new pengembalianForm().Show();
+            this.Hide();
+        }
     }
 }
