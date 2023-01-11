@@ -9,7 +9,7 @@ namespace Perpustakaan_admin
 {
     public partial class daftarAccount : Form
     {
-        admin adm = new admin();
+       
 
         public daftarAccount(dashboardAdmin dashboardAdmin)
         {
@@ -45,7 +45,7 @@ namespace Perpustakaan_admin
 
             else
             {
-                if (adm.addAdmin( id_admin, username, password_admin) == 1)
+                /*if ()
                 {
                     MessageBox.Show("New Data Added Successfully!",
                     "New Data",
@@ -57,7 +57,7 @@ namespace Perpustakaan_admin
                     MessageBox.Show("data tidak terisi", "data kosong",
                MessageBoxButtons.OK,
                MessageBoxIcon.Error);
-                }
+                }*/
                 this.Hide();
 
             }
