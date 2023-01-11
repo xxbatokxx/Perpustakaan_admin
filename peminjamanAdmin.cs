@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Perpustakaan_admin.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace Perpustakaan_admin
             InitializeComponent();
         }
 
+        peminjaman Peminjaman = new peminjaman();
+
         private void dgv_data_pinjam_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -26,6 +29,13 @@ namespace Perpustakaan_admin
         {
             new peminjamanForm().Show();
             this.Hide();
+        }
+
+        private void peminjamanAdmin_Load(object sender, EventArgs e)
+        {
+            dgv_data_pinjam.DataSource = Peminjaman.viewPinjam();
+            dgv_data_pinjam.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgv_data_pinjam.EnableHeadersVisualStyles = false;
         }
     }
 }

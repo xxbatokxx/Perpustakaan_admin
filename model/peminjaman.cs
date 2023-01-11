@@ -1,6 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +12,9 @@ namespace Perpustakaan_admin.model
     internal class peminjaman
     {
         Database db = new Database();
+        Buku buku = new Buku();
+        
+        
 
         public int id_pinjam { get; set; }
 
@@ -22,8 +27,9 @@ namespace Perpustakaan_admin.model
         public string status { get; set; }
 
         public int addPeminjaman(string id_user, string tgl_pinjam, string id_buku)
-        {
-            string queryString = "INSERT INTO pinjam VALUES (@id_pinjam, @id_user, @tgl_pinjam, @id_buku, 'Di pinjam')";
+        {  
+            string queryString = @"INSERT INTO pinjam VALUES (@id_pinjam, @id_user, @tgl_pinjam, @id_buku, 'Di pinjam');
+            UPDATE buku set status = 'kosong' WHERE id_buku=@id_buku";
             MySqlParameter[] parameters = new MySqlParameter[4];
 
             parameters[0] = new MySqlParameter("@id_pinjam", MySqlDbType.VarChar);
@@ -37,6 +43,14 @@ namespace Perpustakaan_admin.model
             parameters[3].Value = id_buku;
 
             return db.setData(queryString, parameters);
+        }
+
+        public DataTable viewPinjam()
+        {
+            DataTable dt = new DataTable();
+            dt = db.getData("SELECT * FROM pinjam", null);
+
+            return dt;
         }
     }
 }

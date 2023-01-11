@@ -36,7 +36,7 @@ namespace Perpustakaan_admin
             string judul = txt_judul.Text;
             string pengarang = txt_pengarang.Text;
             string penerbit = txt_penerbit.Text;
-            string status = cmb_status.Text;
+            
 
             if (id_buku.Trim().Equals(""))
             {
@@ -64,7 +64,7 @@ namespace Perpustakaan_admin
             }
             else
             {
-               if (buku.addBuku(id_buku, judul, pengarang, penerbit, status) == 1)
+               if (buku.addBuku(id_buku, judul, pengarang, penerbit) == 1)
                 {
                     MessageBox.Show("New buku sudah ditambah!",
                     "New Genre",
@@ -90,9 +90,9 @@ namespace Perpustakaan_admin
             string judul = txt_judul.Text;
             string pengarang = txt_pengarang.Text;
             string penerbit = txt_penerbit.Text;
-            string status = cmb_status.Text;
+            
 
-            if (buku.updateBuku(id_buku, judul, pengarang, penerbit, status) == 1)
+            if (buku.updateBuku(id_buku, judul, pengarang, penerbit) == 1)
             {
                 MessageBox.Show("Buku sudah di update!",
                 "Buku baru",
@@ -124,7 +124,7 @@ namespace Perpustakaan_admin
                 txt_judul.Text = "";
                 txt_penerbit.Text = "";
                 txt_pengarang.Text = "";
-                cmb_status.Text = "";
+                
             }
             else
             {

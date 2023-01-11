@@ -19,6 +19,7 @@ namespace Perpustakaan_admin
         }
 
         peminjaman Peminjaman = new peminjaman();
+        Buku buku = new Buku();
 
         private void btn_simpan_pinjam_Click(object sender, EventArgs e)
         {
@@ -26,6 +27,7 @@ namespace Perpustakaan_admin
             string id_user = txt_idUser.Text;
             string tgl_pinjam = txt_tgl.Text;
             string id_buku = txt_id_buku.Text;
+
 
             if (id_user.Trim().Equals("") )
             {
@@ -36,18 +38,12 @@ namespace Perpustakaan_admin
             }
             else
             {
-                if (Peminjaman.addPeminjaman(id_user, tgl_pinjam, id_buku) == 1)
+                if (Peminjaman.addPeminjaman (id_user, tgl_pinjam, id_buku) == 1)
                 {
                     MessageBox.Show("Ada yang baru pinjam buku",
                     "New Genre",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("data masih kosong", "data kosong",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
                 }
                 new peminjamanAdmin().Show();
                 this.Hide();
