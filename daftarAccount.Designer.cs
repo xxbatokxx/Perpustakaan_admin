@@ -38,6 +38,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_nama = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,11 +48,11 @@
             // 
             this.label_header.AutoSize = true;
             this.label_header.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label_header.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_header.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_header.Location = new System.Drawing.Point(12, 19);
             this.label_header.Name = "label_header";
-            this.label_header.Size = new System.Drawing.Size(157, 25);
+            this.label_header.Size = new System.Drawing.Size(193, 25);
             this.label_header.TabIndex = 0;
             this.label_header.Text = "Daftar akun anda";
             // 
@@ -65,20 +67,20 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.Location = new System.Drawing.Point(118, 168);
+            this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.Location = new System.Drawing.Point(126, 185);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(155, 25);
+            this.txt_pass.Size = new System.Drawing.Size(155, 24);
             this.txt_pass.TabIndex = 79;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 174);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(36, 191);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 16);
+            this.label5.Size = new System.Drawing.Size(75, 16);
             this.label5.TabIndex = 78;
             this.label5.Text = "Password";
             // 
@@ -99,7 +101,7 @@
             this.btn_simpan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_simpan.FlatAppearance.BorderSize = 0;
             this.btn_simpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_simpan.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_simpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_simpan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_simpan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_simpan.Location = new System.Drawing.Point(18, 20);
@@ -119,7 +121,7 @@
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FlatAppearance.BorderSize = 0;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_login.Location = new System.Drawing.Point(114, 20);
@@ -143,27 +145,47 @@
             // 
             // txt_nama
             // 
-            this.txt_nama.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nama.Location = new System.Drawing.Point(118, 121);
+            this.txt_nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nama.Location = new System.Drawing.Point(126, 138);
             this.txt_nama.Name = "txt_nama";
-            this.txt_nama.Size = new System.Drawing.Size(237, 25);
+            this.txt_nama.Size = new System.Drawing.Size(237, 24);
             this.txt_nama.TabIndex = 76;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 127);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(35, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(78, 16);
             this.label3.TabIndex = 75;
             this.label3.Text = "Username";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.TabIndex = 81;
+            this.label1.Text = "ID Admin";
+            // 
+            // txt_id
+            // 
+            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id.Location = new System.Drawing.Point(126, 98);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(237, 24);
+            this.txt_id.TabIndex = 82;
             // 
             // daftarAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 329);
+            this.Controls.Add(this.txt_id);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_jabatan);
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.label5);
@@ -184,6 +206,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txt_id;
         public System.Windows.Forms.Label label_header;
         public System.Windows.Forms.Label lbl_jabatan;
         public System.Windows.Forms.TextBox txt_pass;
@@ -194,5 +218,10 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.TextBox txt_nama;
         private System.Windows.Forms.Label label3;
+
+        private void Btn_simpan_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
