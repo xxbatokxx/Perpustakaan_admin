@@ -50,10 +50,10 @@
             // label_page
             // 
             this.label_page.AutoSize = true;
-            this.label_page.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_page.Location = new System.Drawing.Point(680, 506);
             this.label_page.Name = "label_page";
-            this.label_page.Size = new System.Drawing.Size(22, 20);
+            this.label_page.Size = new System.Drawing.Size(24, 18);
             this.label_page.TabIndex = 63;
             this.label_page.Text = "/ 1";
             // 
@@ -73,7 +73,7 @@
             this.btn_next_page.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_next_page.FlatAppearance.BorderSize = 0;
             this.btn_next_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_next_page.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_next_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next_page.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_next_page.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_next_page.Location = new System.Drawing.Point(730, 502);
@@ -92,7 +92,7 @@
             this.btn_prev_page.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_prev_page.FlatAppearance.BorderSize = 0;
             this.btn_prev_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_prev_page.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_prev_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_prev_page.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_prev_page.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_prev_page.Location = new System.Drawing.Point(562, 503);
@@ -120,7 +120,7 @@
             // 
             // cmb_kategori_cari
             // 
-            this.cmb_kategori_cari.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_kategori_cari.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_kategori_cari.FormattingEnabled = true;
             this.cmb_kategori_cari.Items.AddRange(new object[] {
             "id_pinjam",
@@ -139,7 +139,7 @@
             this.btn_kembali.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_kembali.FlatAppearance.BorderSize = 0;
             this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kembali.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_kembali.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_kembali.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_kembali.Location = new System.Drawing.Point(12, 102);
@@ -153,11 +153,11 @@
             // 
             // txt_cari
             // 
-            this.txt_cari.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cari.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cari.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.txt_cari.Location = new System.Drawing.Point(663, 104);
             this.txt_cari.Name = "txt_cari";
-            this.txt_cari.Size = new System.Drawing.Size(130, 25);
+            this.txt_cari.Size = new System.Drawing.Size(130, 24);
             this.txt_cari.TabIndex = 56;
             // 
             // dgv_data_pinjam
@@ -165,7 +165,7 @@
             this.dgv_data_pinjam.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5);
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -175,7 +175,7 @@
             this.dgv_data_pinjam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -205,7 +205,7 @@
             // label_info
             // 
             this.label_info.AutoSize = true;
-            this.label_info.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_info.Location = new System.Drawing.Point(0, 507);
             this.label_info.Name = "label_info";
             this.label_info.Size = new System.Drawing.Size(10, 16);
@@ -223,21 +223,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(6, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 25);
+            this.label1.Size = new System.Drawing.Size(140, 25);
             this.label1.TabIndex = 51;
             this.label1.Text = "Peminjaman";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 510);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 16);
+            this.label2.Size = new System.Drawing.Size(207, 16);
             this.label2.TabIndex = 64;
             this.label2.Text = "Menampilkan                  Data Buku.";
             // 
@@ -260,7 +260,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "peminjamanAdmin";
-            this.Text = "Form1";
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data_pinjam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

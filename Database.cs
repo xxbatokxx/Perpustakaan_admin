@@ -26,7 +26,7 @@ namespace Perpustakaan
 
         public void openConnction()
         {
-            if (connection.State == System.Data.ConnectionState.Closed)
+            if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
             }
@@ -34,7 +34,7 @@ namespace Perpustakaan
 
         public void closeConnction()
         {
-            if (connection.State != System.Data.ConnectionState.Open)
+            if (connection.State != ConnectionState.Open)
             {
                 connection.Close();
             }
@@ -64,6 +64,8 @@ namespace Perpustakaan
             adapter.Fill(dt);
             return dt;
         }
+
+
         internal static void execute(string v)
         {
             throw new NotImplementedException();

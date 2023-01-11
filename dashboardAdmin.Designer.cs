@@ -87,7 +87,7 @@ namespace Perpustakaan_admin
             this.panel2.Location = new System.Drawing.Point(254, 107);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(20, 0, 20, 20);
-            this.panel2.Size = new System.Drawing.Size(840, 620);
+            this.panel2.Size = new System.Drawing.Size(840, 611);
             this.panel2.TabIndex = 16;
             // 
             // panel_content
@@ -104,7 +104,7 @@ namespace Perpustakaan_admin
             this.panel_content.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_content.Location = new System.Drawing.Point(20, 0);
             this.panel_content.Name = "panel_content";
-            this.panel_content.Size = new System.Drawing.Size(820, 600);
+            this.panel_content.Size = new System.Drawing.Size(820, 591);
             this.panel_content.TabIndex = 0;
             // 
             // button1
@@ -113,7 +113,7 @@ namespace Perpustakaan_admin
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(100, 451);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 37);
@@ -137,7 +137,7 @@ namespace Perpustakaan_admin
             this.btn_buku.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_buku.FlatAppearance.BorderSize = 0;
             this.btn_buku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buku.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buku.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buku.Location = new System.Drawing.Point(100, 229);
             this.btn_buku.Name = "btn_buku";
             this.btn_buku.Size = new System.Drawing.Size(164, 37);
@@ -162,7 +162,7 @@ namespace Perpustakaan_admin
             this.btn_kembali.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_kembali.FlatAppearance.BorderSize = 0;
             this.btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kembali.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_kembali.Location = new System.Drawing.Point(511, 229);
             this.btn_kembali.Name = "btn_kembali";
             this.btn_kembali.Size = new System.Drawing.Size(164, 37);
@@ -176,7 +176,7 @@ namespace Perpustakaan_admin
             this.btn_pinjam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pinjam.FlatAppearance.BorderSize = 0;
             this.btn_pinjam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pinjam.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pinjam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pinjam.Location = new System.Drawing.Point(511, 451);
             this.btn_pinjam.Name = "btn_pinjam";
             this.btn_pinjam.Size = new System.Drawing.Size(164, 37);
@@ -216,7 +216,7 @@ namespace Perpustakaan_admin
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 107);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(254, 620);
+            this.panel1.Size = new System.Drawing.Size(254, 611);
             this.panel1.TabIndex = 15;
             // 
             // button2
@@ -241,11 +241,11 @@ namespace Perpustakaan_admin
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(62, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 23);
+            this.label4.Size = new System.Drawing.Size(136, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "User Account";
             // 
@@ -253,11 +253,11 @@ namespace Perpustakaan_admin
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(17, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.Size = new System.Drawing.Size(84, 18);
             this.label1.TabIndex = 8;
             this.label1.Text = "ID admin :";
             // 
@@ -265,11 +265,11 @@ namespace Perpustakaan_admin
             // 
             this.lbl_id.AutoSize = true;
             this.lbl_id.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_id.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_id.Location = new System.Drawing.Point(100, 69);
             this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(51, 20);
+            this.lbl_id.Size = new System.Drawing.Size(56, 18);
             this.lbl_id.TabIndex = 9;
             this.lbl_id.Text = "000001";
             // 
@@ -277,11 +277,11 @@ namespace Perpustakaan_admin
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(17, 100);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 20);
+            this.label8.Size = new System.Drawing.Size(62, 18);
             this.label8.TabIndex = 10;
             this.label8.Text = "Nama :";
             // 
@@ -289,11 +289,11 @@ namespace Perpustakaan_admin
             // 
             this.lbl_nama.AutoSize = true;
             this.lbl_nama.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_nama.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nama.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_nama.Location = new System.Drawing.Point(73, 100);
             this.lbl_nama.Name = "lbl_nama";
-            this.lbl_nama.Size = new System.Drawing.Size(84, 20);
+            this.lbl_nama.Size = new System.Drawing.Size(97, 18);
             this.lbl_nama.TabIndex = 11;
             this.lbl_nama.Text = "Kahfi Baidowi";
             // 
@@ -303,7 +303,7 @@ namespace Perpustakaan_admin
             this.panel3.Location = new System.Drawing.Point(0, 107);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 20);
-            this.panel3.Size = new System.Drawing.Size(1439, 620);
+            this.panel3.Size = new System.Drawing.Size(1370, 611);
             this.panel3.TabIndex = 17;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -314,17 +314,17 @@ namespace Perpustakaan_admin
             this.panel_account.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_account.Location = new System.Drawing.Point(0, 30);
             this.panel_account.Name = "panel_account";
-            this.panel_account.Size = new System.Drawing.Size(1439, 77);
+            this.panel_account.Size = new System.Drawing.Size(1370, 77);
             this.panel_account.TabIndex = 14;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(12, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(372, 23);
+            this.label2.Size = new System.Drawing.Size(455, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Selamat datang di dashboard admin perpus GUI";
             // 
@@ -336,9 +336,9 @@ namespace Perpustakaan_admin
             this.status_id,
             this.status_nama,
             this.status_level});
-            this.status_bar.Location = new System.Drawing.Point(0, 727);
+            this.status_bar.Location = new System.Drawing.Point(0, 718);
             this.status_bar.Name = "status_bar";
-            this.status_bar.Size = new System.Drawing.Size(1439, 31);
+            this.status_bar.Size = new System.Drawing.Size(1370, 31);
             this.status_bar.TabIndex = 12;
             this.status_bar.Text = "status_bar";
             // 
@@ -374,7 +374,7 @@ namespace Perpustakaan_admin
             this.menu_bar.Location = new System.Drawing.Point(0, 0);
             this.menu_bar.Name = "menu_bar";
             this.menu_bar.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menu_bar.Size = new System.Drawing.Size(1439, 30);
+            this.menu_bar.Size = new System.Drawing.Size(1370, 30);
             this.menu_bar.Stretch = false;
             this.menu_bar.TabIndex = 11;
             this.menu_bar.Text = "menu_bar";
@@ -388,7 +388,7 @@ namespace Perpustakaan_admin
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(12, 328);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(224, 39);
@@ -400,7 +400,7 @@ namespace Perpustakaan_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1439, 758);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
