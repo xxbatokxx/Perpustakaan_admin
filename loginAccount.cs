@@ -53,7 +53,7 @@ namespace Perpustakaan_admin
       
            
 
-            if (table.Rows.Count == !table.Rows.Count)
+            if (table.Rows.Count == 1)
             {
                 
                 this.Hide();
