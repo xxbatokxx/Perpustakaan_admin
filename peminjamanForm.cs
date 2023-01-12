@@ -24,12 +24,14 @@ namespace Perpustakaan_admin
         private void btn_simpan_pinjam_Click(object sender, EventArgs e)
         {
             
-            string id_user = txt_idUser.Text;
+            string nama_user = txt_namaUser.Text;
+            string nim = txt_idNim.Text;
+            string kelas = txt_kelas.Text;
             string tgl_pinjam = txt_tgl.Text;
-            string id_buku = txt_id_buku.Text;
+            string id_buku = txt_idBuku.Text;
 
 
-            if (id_user.Trim().Equals("") )
+            if (nama_user.Trim().Equals("") )
             {
                 MessageBox.Show("Masukan id user terlebih dahulu!",
                     "User baru",
@@ -38,7 +40,7 @@ namespace Perpustakaan_admin
             }
             else
             {
-                if (Peminjaman.addPeminjaman (id_user, tgl_pinjam, id_buku) == 1)
+                if (Peminjaman.addPeminjaman(nama_user, nim, kelas, tgl_pinjam, id_buku) == 1)
                 {
                     MessageBox.Show("Ada yang baru pinjam buku",
                     "New Genre",

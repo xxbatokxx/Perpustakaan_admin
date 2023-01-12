@@ -52,18 +52,20 @@
             // 
             this.label_page.AutoSize = true;
             this.label_page.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_page.Location = new System.Drawing.Point(681, 503);
+            this.label_page.Location = new System.Drawing.Point(908, 619);
+            this.label_page.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_page.Name = "label_page";
-            this.label_page.Size = new System.Drawing.Size(22, 20);
+            this.label_page.Size = new System.Drawing.Size(27, 23);
             this.label_page.TabIndex = 58;
             this.label_page.Text = "/ 1";
             // 
             // txt_page
             // 
             this.txt_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_page.Location = new System.Drawing.Point(637, 500);
+            this.txt_page.Location = new System.Drawing.Point(849, 615);
+            this.txt_page.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_page.Name = "txt_page";
-            this.txt_page.Size = new System.Drawing.Size(42, 26);
+            this.txt_page.Size = new System.Drawing.Size(55, 30);
             this.txt_page.TabIndex = 57;
             this.txt_page.Text = "1";
             // 
@@ -77,10 +79,11 @@
             this.btn_next_page.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_next_page.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_next_page.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_next_page.Location = new System.Drawing.Point(731, 499);
+            this.btn_next_page.Location = new System.Drawing.Point(975, 614);
+            this.btn_next_page.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_next_page.Name = "btn_next_page";
-            this.btn_next_page.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_next_page.Size = new System.Drawing.Size(65, 26);
+            this.btn_next_page.Padding = new System.Windows.Forms.Padding(7, 0, 3, 0);
+            this.btn_next_page.Size = new System.Drawing.Size(87, 32);
             this.btn_next_page.TabIndex = 56;
             this.btn_next_page.Text = "NEXT";
             this.btn_next_page.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -96,10 +99,11 @@
             this.btn_prev_page.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_prev_page.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_prev_page.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_prev_page.Location = new System.Drawing.Point(563, 500);
+            this.btn_prev_page.Location = new System.Drawing.Point(751, 615);
+            this.btn_prev_page.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_prev_page.Name = "btn_prev_page";
-            this.btn_prev_page.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_prev_page.Size = new System.Drawing.Size(68, 26);
+            this.btn_prev_page.Padding = new System.Windows.Forms.Padding(7, 0, 3, 0);
+            this.btn_prev_page.Size = new System.Drawing.Size(91, 32);
             this.btn_prev_page.TabIndex = 55;
             this.btn_prev_page.Text = "PREV";
             this.btn_prev_page.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -113,9 +117,10 @@
             "10",
             "20",
             "50"});
-            this.cmb_length.Location = new System.Drawing.Point(75, 504);
+            this.cmb_length.Location = new System.Drawing.Point(100, 620);
+            this.cmb_length.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_length.Name = "cmb_length";
-            this.cmb_length.Size = new System.Drawing.Size(41, 21);
+            this.cmb_length.Size = new System.Drawing.Size(53, 24);
             this.cmb_length.TabIndex = 54;
             this.cmb_length.Text = "10";
             // 
@@ -123,9 +128,10 @@
             // 
             this.label_info.AutoSize = true;
             this.label_info.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_info.Location = new System.Drawing.Point(3, 505);
+            this.label_info.Location = new System.Drawing.Point(4, 622);
+            this.label_info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_info.Name = "label_info";
-            this.label_info.Size = new System.Drawing.Size(175, 16);
+            this.label_info.Size = new System.Drawing.Size(238, 22);
             this.label_info.TabIndex = 53;
             this.label_info.Text = "Menampilkan                  Data Buku.";
             this.label_info.Click += new System.EventHandler(this.label_info_Click);
@@ -137,18 +143,20 @@
             this.cmb_kategori_cari.Items.AddRange(new object[] {
             "id_member",
             "nama_lengkap"});
-            this.cmb_kategori_cari.Location = new System.Drawing.Point(530, 102);
+            this.cmb_kategori_cari.Location = new System.Drawing.Point(707, 126);
+            this.cmb_kategori_cari.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_kategori_cari.Name = "cmb_kategori_cari";
-            this.cmb_kategori_cari.Size = new System.Drawing.Size(94, 24);
+            this.cmb_kategori_cari.Size = new System.Drawing.Size(124, 28);
             this.cmb_kategori_cari.TabIndex = 52;
             this.cmb_kategori_cari.Text = "nama_lengkap";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Location = new System.Drawing.Point(12, 53);
+            this.panel1.Location = new System.Drawing.Point(16, 65);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 1);
+            this.panel1.Size = new System.Drawing.Size(1029, 1);
             this.panel1.TabIndex = 51;
             // 
             // label1
@@ -156,11 +164,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Location = new System.Drawing.Point(8, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 25);
+            this.label1.Size = new System.Drawing.Size(201, 31);
             this.label1.TabIndex = 50;
-            this.label1.Text = "User";
+            this.label1.Text = "User pinjam buku";
             // 
             // btn_hapus
             // 
@@ -172,10 +181,11 @@
             this.btn_hapus.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_hapus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_hapus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_hapus.Location = new System.Drawing.Point(213, 96);
+            this.btn_hapus.Location = new System.Drawing.Point(284, 118);
+            this.btn_hapus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_hapus.Name = "btn_hapus";
-            this.btn_hapus.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_hapus.Size = new System.Drawing.Size(84, 32);
+            this.btn_hapus.Padding = new System.Windows.Forms.Padding(7, 0, 3, 0);
+            this.btn_hapus.Size = new System.Drawing.Size(112, 39);
             this.btn_hapus.TabIndex = 49;
             this.btn_hapus.Text = "HAPUS";
             this.btn_hapus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -192,10 +202,11 @@
             this.btn_edit.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_edit.Location = new System.Drawing.Point(109, 96);
+            this.btn_edit.Location = new System.Drawing.Point(145, 118);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_edit.Size = new System.Drawing.Size(94, 32);
+            this.btn_edit.Padding = new System.Windows.Forms.Padding(7, 0, 3, 0);
+            this.btn_edit.Size = new System.Drawing.Size(125, 39);
             this.btn_edit.TabIndex = 48;
             this.btn_edit.Text = "SUNTING";
             this.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -205,9 +216,10 @@
             // 
             this.txt_cari.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cari.ImeMode = System.Windows.Forms.ImeMode.Katakana;
-            this.txt_cari.Location = new System.Drawing.Point(630, 101);
+            this.txt_cari.Location = new System.Drawing.Point(840, 124);
+            this.txt_cari.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_cari.Name = "txt_cari";
-            this.txt_cari.Size = new System.Drawing.Size(154, 25);
+            this.txt_cari.Size = new System.Drawing.Size(204, 29);
             this.txt_cari.TabIndex = 47;
             // 
             // btn_tambah
@@ -220,10 +232,11 @@
             this.btn_tambah.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_tambah.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_tambah.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_tambah.Location = new System.Drawing.Point(12, 96);
+            this.btn_tambah.Location = new System.Drawing.Point(16, 118);
+            this.btn_tambah.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_tambah.Name = "btn_tambah";
-            this.btn_tambah.Padding = new System.Windows.Forms.Padding(5, 0, 2, 0);
-            this.btn_tambah.Size = new System.Drawing.Size(87, 32);
+            this.btn_tambah.Padding = new System.Windows.Forms.Padding(7, 0, 3, 0);
+            this.btn_tambah.Size = new System.Drawing.Size(116, 39);
             this.btn_tambah.TabIndex = 46;
             this.btn_tambah.Text = "TAMBAH";
             this.btn_tambah.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -254,7 +267,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_data_member.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_data_member.GridColor = System.Drawing.SystemColors.Control;
-            this.dgv_data_member.Location = new System.Drawing.Point(6, 147);
+            this.dgv_data_member.Location = new System.Drawing.Point(8, 181);
+            this.dgv_data_member.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_data_member.MultiSelect = false;
             this.dgv_data_member.Name = "dgv_data_member";
             this.dgv_data_member.ReadOnly = true;
@@ -270,15 +284,15 @@
             this.dgv_data_member.RowHeadersWidth = 40;
             this.dgv_data_member.RowTemplate.Height = 28;
             this.dgv_data_member.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_data_member.Size = new System.Drawing.Size(790, 335);
+            this.dgv_data_member.Size = new System.Drawing.Size(1053, 412);
             this.dgv_data_member.TabIndex = 45;
             this.dgv_data_member.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_data_member_CellContentClick);
             // 
             // user
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 532);
+            this.ClientSize = new System.Drawing.Size(1069, 655);
             this.Controls.Add(this.label_page);
             this.Controls.Add(this.txt_page);
             this.Controls.Add(this.btn_next_page);
@@ -293,6 +307,7 @@
             this.Controls.Add(this.txt_cari);
             this.Controls.Add(this.btn_tambah);
             this.Controls.Add(this.dgv_data_member);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "user";
             this.Text = "user";
             this.Load += new System.EventHandler(this.user_Load);

@@ -53,10 +53,9 @@ namespace Perpustakaan_admin
       
            
 
-            if (table.Rows.Count > 0)
+            if (table.Rows.Count == !table.Rows.Count)
             {
-                dashboardAdmin dashboard = new dashboardAdmin();
-                dashboard.Show();
+                
                 this.Hide();
                
             }

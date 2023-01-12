@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,28 +13,42 @@ namespace Perpustakaan_admin.model
     {
         Database db = new Database();
 
-        public int id_user { get; set; }
+        public int id { get; set; }
 
-        public string nama { get; set; }
-        public int id_pinjam { get; set; }
+        public string nama_user { get; set; }
         public string tgl_kembali { get; set; }
 
-        public int addKembali(int id_user, string nama, int id_pinjam, string tgl_kembali)
+        public string id_buku { get; set; }
+       
+
+        public int addKembali(string nama_user, string tgl_kembali, string id_buku)
         {
-            string queryString = "INSERT INTO pinjam VALUES (@id_user, @nama, @id_pinjam, @tgl_pinjam)";
+            string queryString = @"INSERT INTO kembali VALUES (@id, @nama_user, @tgl_kembali, @id_buku);     
+            UPDATE buku SET status = 'Tersedia' WHERE id_buku=@id_buku";
             MySqlParameter[] parameters = new MySqlParameter[4];
 
-            parameters[0] = new MySqlParameter("@id_user", MySqlDbType.Int32);
-            parameters[1] = new MySqlParameter("@nama", MySqlDbType.VarChar);
-            parameters[2] = new MySqlParameter("@id_pinjam", MySqlDbType.Int32);
-            parameters[3] = new MySqlParameter("@tgl_kembali", MySqlDbType.VarChar);
+            parameters[0] = new MySqlParameter("@id", MySqlDbType.Int32);
+            parameters[1] = new MySqlParameter("@nama_user", MySqlDbType.VarChar);
+            parameters[2] = new MySqlParameter("@tgl_kembali", MySqlDbType.VarChar);
+            parameters[3] = new MySqlParameter("@id_buku", MySqlDbType.VarChar);
 
-            parameters[0].Value = id_user;
-            parameters[2].Value = nama;
-            parameters[1].Value = id_pinjam;
+            parameters[1].Value = nama_user;
             parameters[2].Value = tgl_kembali;
+            parameters[3].Value = id_buku;
+
+
 
             return db.setData(queryString, parameters);
         }
+
+        public DataTable viewPengembalian()
+        {
+            DataTable dt = new DataTable();
+            dt = db.getData("SELECT * FROM kembali", null);
+
+            return dt;
+        }
+
+
     }
 }

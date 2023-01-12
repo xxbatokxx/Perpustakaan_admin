@@ -16,7 +16,7 @@ namespace Perpustakaan_admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new peminjamanAdmin());
+            Application.Run(new loginAccount());
         }
     }
 }
